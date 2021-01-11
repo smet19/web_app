@@ -1,0 +1,7 @@
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/.name
+.idea/
+.DS_Store
+venv/
+__pycache__/
+config.py

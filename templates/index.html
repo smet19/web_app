@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .pikachu_h {
+            margin: 25px;
+        }
+
+        .pikachu_h0 {
+            padding: 5px;
+        }
+
+        .uploader {
+            padding-right: 600px;
+            padding-left: 20px;
+
+        }
+        .footer{
+             position:fixed; bottom:0;
+            padding-left: 20px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>uisd web app</title>
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Главная
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <div class="pikachu_h">
+                <h1>Pikachu Detector</h1>
+            </div>
+            <div class="col-sm">
+                <div class="pikachu_h0">
+                    <p>Пикачу или нет? Загрузи картинку и узнай ответ.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="uploader">
+                <div class="form-group">
+                    <form action="/uploader" method="POST"
+                          enctype="multipart/form-data">
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                                 <input type = "file"  class="custom-file-input" name = "file" />
+                                <label class="custom-file-label" for="inputGroupFile02">Выбрать файл</label>
+                            </div>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Проверить
+                        </button>
+                         </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+<footer id="footer " class="footer">
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <p class="pull-left">Copyright © 2020 Чел</p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
